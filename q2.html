@@ -2,13 +2,24 @@
 <html lang="en">
 
 <head>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+
+
     <style>
+        p {
+            font-family: 'Cedarville Cursive', cursive;
+            color: red;
+            font-size: 2em;
+        }
     </style>
 </head>
 
 <body>
     <h1>The magic 8 ball</h1>
-    <input /><br />
+    <input placeholder="ask me anything"/><br />
     <x-magic />
     <script>
         class Magic8Ball extends HTMLElement{
