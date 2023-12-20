@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" contnt="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h1>Where in the world is Liana Valdez?</h1>
+    </header>
+
+    <main>
+        <p>Liana was here</p>
+    </main>
+</body>
+
+<script>
+    class YearElement extends HTMLElement{
+        connectedCallback(){
+            this.innerHTML = new Date().getFullYear();
+        }
+    }
+    customElements.define("x-fullyear", YearElement);
+</script>
+
+<footer>
+    &copy; Liana Valdez <x-fullyear></x-fullyear>
+</footer>
+
+</html>
